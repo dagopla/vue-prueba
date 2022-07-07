@@ -1,0 +1,71 @@
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 3rem #000;
+    background-color: var(--focuspeli);
+    border-radius: 2rem;
+}
+li{
+    width: 230px;
+    height: 345px;
+    display: block;
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+ul{
+    display: block;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+.img-div{
+    position: absolute;
+    z-index: 50;
+    
+}
+.details-peli{
+    position: absolute;
+    border-radius: 1rem ;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, alpha);
+    width: 230px;
+    height: 345px;
+    top: 0;
+    z-index: 40;
+    text-align: center;
+    text-align-last: center;
+    color: white;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 1px black;
+    
+}
+.img-div:hover{
+    z-index: 30;
+}
+.details-peli:hover{
+    z-index: 100;
+}
+.info_peli{
+    color: black;
+    font-family: 1rem;
+    margin: 40px;
+    width: 800px;
+}
+a{
+    background-color: rgb(65, 65, 85);
+    color: #f1f4ff;
+    padding: 1rem;
+    margin: 2rem;
+
+    border-radius: 2rem;
+}
+a:hover{
+    color: var(--body); 
+ }
